@@ -47,7 +47,7 @@ nav li a{
     font-size: 4rem;
     font-weight: 700;
 }
-.banner-des, .teams-des{
+.banner-des, .teams-des,.fact-des{
     color: #727272;
     font-size: 1rem;
     font-weight: 400;
@@ -95,7 +95,7 @@ main{
 .teams-content{
     padding-right: 70px;padding-left: 70px;
 }
-.teams-tiltle{
+.teams-tiltle,.fact-title{
     font-size: 3rem;
 }
 .Quick-list{
@@ -128,4 +128,27 @@ main{
     }
   
     
+}
+/* main part sec2 */
+/* fact section */
+
+.fact-image{
+    display: flex;justify-content: space-around;
+}
+.fact-image .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center; padding: 40px 30px ;
+}
+.fact-image .card-stat{
+    font-size: 2.8rem;color:#424242;
+    margin-top: 10px;
+}
+.fact-image .card-title{
+    color: #727272;    font-size: 1.25rem ;margin-top: 5px;
+    font-weight: 600;
+
+}
+.fact-des{
+    width: 542px;
 }
