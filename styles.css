@@ -1,0 +1,7 @@
+/* Work Sans font imported to css file instead of using links */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/* universal tag */
+*{
+    font-family: 'Work Sans', sans-serif;
+}
