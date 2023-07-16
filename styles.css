@@ -12,7 +12,7 @@
     font-weight: 600;border-radius: 8px;border: 0;
     background: #FF900E;cursor: pointer;
 }
-/*  */
+/* header part starts here */
 header{
     background: rgba(255, 144, 14, 0.10);padding: 50px 240px;
 
@@ -47,7 +47,7 @@ nav li a{
     font-size: 4rem;
     font-weight: 700;
 }
-.banner-des, .teams-des,.fact-des,.sponsor-des{
+.banner-des, .teams-des,.fact-des,.sponsor-des,.fsection-des,.fcard-des{
     color: #727272;
     font-size: 1rem;
     font-weight: 400;
@@ -82,7 +82,9 @@ nav li a{
     }
     
 }
-/* main */
+/* header part ends here */
+/* main starts */
+/* teams part starts here */
 main{
     max-width: 1440px;margin: 70px auto;
 }
@@ -95,7 +97,7 @@ main{
 .teams-content{
     padding-right: 70px;padding-left: 70px;
 }
-.teams-title,.fact-title,.sponsor-title{
+.teams-title,.fact-title,.sponsor-title,.fsection-title{
     font-size: 3rem;
 }
 .Quick-list{
@@ -131,8 +133,90 @@ main{
   
     
 }
-/* main part sec2 */
-/* fact section */
+/* teams part ends */
+/* feature sec starts */
+.Features{
+    display: flex;
+    margin-top: 130px;gap: 100px;justify-content: center;align-items: center;
+}
+.feature-content .card{
+    padding: 30px;margin-bottom: 20px;
+    ;border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.Features .fsection-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+ .ten{
+    border-radius: 8px;
+    background: #FF900E;color: #FFF;width: 342px;
+    height: 200px;padding: 30px 42px; position: relative;bottom:120px;right: 70px;
+ }   
+ .ten h3{
+    text-align: center;margin-top: 0;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 70px; 
+ }
+ .ten p{
+    text-align: center;font-size: 1.56rem;margin-top: 0px;
+    font-weight: 500;
+    line-height: 40px; 
+
+
+ }
+ .feature-image img{
+    padding-top: 120px;
+    width: 708px;
+    height: 90%;
+
+ }
+
+/*  Mobile device responsive  */
+@media screen  and (max-width:576px) {
+    .Features{
+        flex-direction: column;width:100%;
+    }
+    .feature-image img{
+        width:100%;
+     }
+     .feature-content {
+        width:100%;
+     }
+     .feature-content card{
+        height: 200px;width:100%;padding: 20px 20px;
+     }
+     .feature-content .fsection-des{
+        width:100%;
+
+     }
+     .ten {
+        border-radius: 8px;margin-top: 50px;
+        background: #FF900E;color: #FFF;width: 300px;
+        height: 150px;padding: 30px 30px;position: static;
+     }
+ 
+ 
+    
+}
+/* medium device */
+@media screen  and (min-width:576px) and (max-width:962px) {
+    
+    .Features{
+        flex-direction: column;width:100%;
+    }
+    .ten {
+        border-radius: 8px;margin-top: 50px;
+        background: #FF900E;color: #FFF;width: 300px;
+        height: 150px;padding: 30px 30px;position: static;
+     }
+    
+}
+
+/* feature sec ends */
+/* fact section starts */
 
 .fact-image{
     display: flex;justify-content: space-around;
@@ -151,7 +235,7 @@ main{
     font-weight: 600;
 
 }
-.fact-des{
+.fact-des,.fsection-des{
     width: 542px;
 }
 /* sec3 mobile device  */
@@ -182,6 +266,9 @@ main{
         width: 542px;padding-left: 20px;
     }
  }
+
+/* fact section ends here */
+ /* sponsor starts here */
  .sponsor{
     margin-top: 180px;
  }
@@ -193,7 +280,7 @@ main{
     display: flex; justify-content: space-evenly;margin-top: 50px;
 }
 
-/* sec4 mobile device  */
+/* sponsor mobile device  */
 @media screen  and (max-width:576px) {
 
     .sponsor-title,.sponsor-des{
@@ -210,11 +297,27 @@ main{
   
     
 }
+/* sponsor medium device  */
+@media screen  and (min-width:576px) and (max-width:962px) {
+    
+    .sponsor-image-container{
+        flex-direction: column;align-items: center;justify-content: center;
+    }
+    .sponsor-image-container .sponsor-img{
+        width: 180px; 
+        height: 50px;
+        padding: 20px;
+     }
+  
+ }
 
- /* footer */
+ /* sec4 ends here */
+/* main ends here */
+ /* footer  starts here*/
  .footer-des{
     border-radius: 8px;
     background: #FFF4E7;color:#424242;
     font-size: 20px;
     font-weight: 400;text-align: center;padding: 38px;
  }
+/* footer  ends here*/
